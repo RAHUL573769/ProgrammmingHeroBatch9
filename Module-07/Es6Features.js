@@ -22,3 +22,8 @@ const isEven = (number) => {
 
 const number = isEven(12);
 console.log(number);
+
+//Rest Operator and Spread Operators
+
+const currentNumbers = [...numbers];
+console.log();
