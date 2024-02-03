@@ -9,3 +9,11 @@ Rules of JSX
 2.Must use Camel Case
 
 person={{}}
+
+1.Props are readonly
+2.Props are immutable
+
+
+Why conditional rendering important?
+1.Improved User Experience
+2.Improved Performance

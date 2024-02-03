@@ -3,3 +3,5 @@ export const student = {
   age: 23,
   grade: "10th"
 };
+
+export const actors = ["Sakib", "Raj", "Yain", "Sariful Raj"];
