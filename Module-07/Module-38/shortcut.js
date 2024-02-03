@@ -13,4 +13,5 @@ if (myVar1) {
 }
 
 let myPocketMoney = 100;
-myPocketMoney > 0 ? "Eat Biriyani" : "Eat Cha Biskut";
+isTrue = true;
+isTrue && myPocketMoney > 0 ? "Eat Biriyani" : "Eat Cha Biskut";
