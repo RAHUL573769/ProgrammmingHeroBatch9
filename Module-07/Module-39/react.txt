@@ -1,0 +1,16 @@
+Wha is ReactJs?
+ReactJs is a JS library
+React is a free and open-source front-end JavaScript library for building user interfaces based on components.
+-->It is a JS library for building UI based on components
+-->It is used for rendering components
+-->ReactJs uses one way data binding only
+
+--->ReactJs uses VirtualDom
+
+What is A Component?
+1.Component is a Foundation upon which we build our UI
+2.In react app,every piece of UI is a Component
+3.A react component is a JavaScript function with a sprinkle of Markup
+a.Their name always begin with a capital letter
+b.They return JSX markup
+
