@@ -14,3 +14,10 @@ What is A Component?
 a.Their name always begin with a capital letter
 b.They return JSX markup
 
+
+Part-1
+1.Component
+2.JSX
+3.Props
+4.Conditional rendering
+
