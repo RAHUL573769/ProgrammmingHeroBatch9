@@ -1,0 +1,11 @@
+-->JSX(Javascript+XML)
+Under the hood it is tranformmed in to pure JS
+using Babel/Typescript
+
+JSX-->Babel-->js-->vitual Dom-->
+
+Rules of JSX
+1.Must return a single element
+2.Must use Camel Case
+
+person={{}}
