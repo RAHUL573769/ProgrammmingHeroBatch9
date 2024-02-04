@@ -1,0 +1,7 @@
+[
+  { "id": 12, "name": "SmartWatch X1", "price": 250 },
+  { "id": 13, "name": "TechTime Pro", "price": 300 },
+  { "id": 14, "name": "ConnectWear 5000", "price": 200 },
+  { "id": 15, "name": "EcoSmart Watch", "price": 180 },
+  { "id": 16, "name": "QuantumWrist Elite", "price": 350 }
+]

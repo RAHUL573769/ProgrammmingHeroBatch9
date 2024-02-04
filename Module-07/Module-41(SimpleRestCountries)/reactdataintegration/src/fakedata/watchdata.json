@@ -1,0 +1,12 @@
+[
+  { "id": 2, "name": "Smart Glasses", "price": 150 },
+  { "id": 3, "name": "Fitness Tracker", "price": 80 },
+  { "id": 4, "name": "Digital Thermometer", "price": 25 },
+  { "id": 5, "name": "Wireless Earbuds", "price": 120 },
+  { "id": 6, "name": "Smart Refrigerator", "price": 1000 },
+  { "id": 7, "name": "Security Camera", "price": 180 },
+  { "id": 8, "name": "Portable Speaker", "price": 50 },
+  { "id": 9, "name": "Smart Doorbell", "price": 130 },
+  { "id": 10, "name": "Digital Notepad", "price": 70 },
+  { "id": 11, "name": "Wireless Charging Pad", "price": 30 }
+]
