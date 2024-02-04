@@ -1,16 +1,19 @@
+import HandlingButton from "./Components/HandlingButton";
+import Players from "./Components/Players";
+import StateManagement from "./Components/StateManagement";
+import UsesOfUseEfect from "./Components/UsesOfUseEfect";
+
 /* eslint-disable no-unused-vars */
 function App() {
-  function handleClick() {
-    console.log("Hi");
-  }
-
-  const handleClick1 = () => {
-    console.log("Hi");
-  };
   return (
     <>
       <h1>React Core Concepts-2</h1>
-      <button onClick={handleClick}>Click Here</button>
+      <HandlingButton></HandlingButton>
+
+      <StateManagement></StateManagement>
+
+      <Players></Players>
+      <UsesOfUseEfect></UsesOfUseEfect>
     </>
   );
 }
