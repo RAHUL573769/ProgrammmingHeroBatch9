@@ -11,14 +11,22 @@ const Countries = () => {
       .then((res) => res.json())
       .then((data) => setCountries(data));
   }, []);
-
+  const handleVisitedCountry = (country) => {
+    console.log(country);
+  };
   return (
     <div>
       <h1>Total Countries {countries.length}</h1>
       {/* console.log(countries) */}
-      {countries.map((country) => (
-        <SingleCountries key={country.cca2} country={country}></SingleCountries>
-      ))}
+      <div className="country-container">
+        {countries.map((country) => (
+          <SingleCountries
+            key={country.cca2}
+            country={country}
+            handleVisitedCountry={handleVisitedCountry}
+          ></SingleCountries>
+        ))}
+      </div>
     </div>
   );
 };
