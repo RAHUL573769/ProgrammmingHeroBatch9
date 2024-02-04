@@ -12,7 +12,12 @@ const UsesOfUseEfect = () => {
   return (
     <div>
       <h1>Posts :{posts.length}</h1>
-      <div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "00px 200px 1fr"
+        }}
+      >
         {" "}
         {posts.map((post) => (
           <SinglePosts key={post.id} post={post}></SinglePosts>
