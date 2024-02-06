@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import SingleBlogs from "./SingleBlogs";
 
-const Blogs = ({ handleBookMark }) => {
+const Blogs = ({ handleBookMark, handleMarkAsRead }) => {
   const [blogs, setBlocks] = useState([]);
 
   useEffect(() => {
@@ -22,6 +22,7 @@ const Blogs = ({ handleBookMark }) => {
           key={singleblock.id}
           singleblock={singleblock}
           handleBookMark={handleBookMark}
+          handleMarkAsRead={handleMarkAsRead}
         ></SingleBlogs>
       ))}
     </div>

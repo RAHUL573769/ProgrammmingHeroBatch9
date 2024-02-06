@@ -1,5 +1,5 @@
 import "./Header.css";
-import profileImage from "../../../knowledge-cafe-main/images/profile.png";
+import profileImage from "../../../../knowledge-cafe-main/images/profile.png";
 const Header = () => {
   return (
     <div>
