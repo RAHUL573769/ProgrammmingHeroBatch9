@@ -1,0 +1,7 @@
+There are two types of logic inside React Components
+1.Rendering Code
+2.Event Handlers
+What are side effects in react?
+1.Actions performed onside the world
+2.Different types of Dependencies
+useEffect cleanup function
