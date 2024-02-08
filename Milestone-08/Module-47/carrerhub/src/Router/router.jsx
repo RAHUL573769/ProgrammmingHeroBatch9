@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Components/Root/Root";
-import Hero from "../Components/Hero/Hero";
+
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import Home from "../Components/Home/Home";
+import SingleJobs from "../Components/SingleJobDetails/SingleJobs";
 
 export const router = createBrowserRouter([
   {
@@ -11,7 +13,18 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero></Hero>
+        element: <Home></Home>
+      },
+      {
+        path: "/job/:id",
+        //  ,               // loader: () => {
+        //         //   fetch("../../public/jobs.json");
+        //         // }
+        loader: () => fetch("../jobs.json"),
+        element: <SingleJobs></SingleJobs>
+        // loader: () => {
+        //   fetch("../../public/jobs.json");
+        // }
       }
     ]
   }
