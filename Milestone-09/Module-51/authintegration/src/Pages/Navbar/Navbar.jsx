@@ -3,10 +3,10 @@ const Navbar = () => {
     <>
       {" "}
       <li>
-        <a>Item 1</a>
+        <a>Login </a>
       </li>
       <li>
-        <a>Item 3</a>
+        <a>Register</a>
       </li>
     </>
   );
