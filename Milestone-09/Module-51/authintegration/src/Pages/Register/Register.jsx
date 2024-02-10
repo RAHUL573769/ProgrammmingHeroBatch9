@@ -1,7 +1,22 @@
+/* eslint-disable no-unused-vars */
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
-  const handleRegister = () => {};
+  const { createUser } = useContext(AuthContext);
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    //creating user using context api
+    createUser(email, password)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => console.log(error));
+  };
   return (
     <div>
       <div>
@@ -19,7 +34,7 @@ const Register = () => {
                   <input
                     type="name"
                     name="name"
-                    placeholder="email"
+                    placeholder="name"
                     className="input input-bordered"
                     required
                   />

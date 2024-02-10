@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
   const navItems = (
     <>
       {" "}
@@ -44,7 +48,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          {user ? <>{user.email}</> : <></>}
+
+          <button onClick={""}>Sign Out</button>
         </div>
       </div>
     </div>
