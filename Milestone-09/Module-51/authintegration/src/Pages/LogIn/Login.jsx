@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+/* eslint-disable no-unused-vars */
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { useContext } from "react";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -12,7 +14,9 @@ const Login = () => {
     const password = e.target.password.value;
     console.log(email, password);
     signIn(email, password)
-      .then((res) => console.log(res))
+      .then((res) => {
+        navigate("/");
+      })
       .catch((error) => console.log(error));
     //Login in user in firebase
   };
