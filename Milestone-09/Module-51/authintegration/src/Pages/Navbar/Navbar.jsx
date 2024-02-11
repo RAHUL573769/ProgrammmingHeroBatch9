@@ -1,16 +1,33 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { signOut } from "firebase/auth";
+import { auth } from "../Firebase/FirebaseInit";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { user } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        console.log("sIGNOUT hNADLED");
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
   const navItems = (
     <>
       {" "}
       <li>
-        <a>Login </a>
+        <Link to="/login">Login </Link>
       </li>
       <li>
-        <a>Register</a>
+        <Link to="/register">Register</Link>
+      </li>
+      <li>
+        <Link to="/orders">Orders</Link>
       </li>
     </>
   );
@@ -50,7 +67,7 @@ const Navbar = () => {
         <div className="navbar-end">
           {user ? <>{user.email}</> : <></>}
 
-          <button onClick={""}>Sign Out</button>
+          <button onClick={handleSignOut}>Sign Out</button>
         </div>
       </div>
     </div>
