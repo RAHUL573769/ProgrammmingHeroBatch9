@@ -1,0 +1,2 @@
+What is NodeJs?
+Nodejs is a single threaded non blocking nature asynchronous
