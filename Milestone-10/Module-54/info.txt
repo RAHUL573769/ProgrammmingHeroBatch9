@@ -1,0 +1,55 @@
+How does Api connect client and server?
+
+Get Api==>Get data 
+Post data==>Send data
+
+
+app.use(express.json())
+
+Request Response Model
+
+In ReQUEST:
+1.rEQUEST query string
+2.Parameters
+3.Body
+4.Headers
+
+
+Ryan Dall
+
+-->NodeJs is a server side javascript runtime
+-->Not a programming language
+
+NodeJs
+-->Open Source
+-->Allows server side scripting
+-->server side javascript runtime
+
+Event Driven in NodeJs
+
+
+What is NodeJs?
+1.Fast Data Streaming
+2,.No buffering
+3.Event Driven 
+NodeJs vs Python
+
+What is ExpressjS?
+1.It is a Nodejs framework
+
+What are Middle wares?
+1.Middle wares are functions hat comes to play after the server receives 
+the request and before response is send to client
+2.They are arranged in sequences
+
+
+
+
+What is data?
+
+1.Data can be anything.any information or fact is data
+2.Database is considered asa a container filled with data
+3.Database Management system is a software which is used to manage Data
+
+3 Tier Architecture:
+The 3 tier Architecture contains  
