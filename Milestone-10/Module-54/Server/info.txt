@@ -52,4 +52,9 @@ What is data?
 3.Database Management system is a software which is used to manage Data
 
 3 Tier Architecture:
-The 3 tier Architecture contains  
+The 3 tier Architecture contains application  layer  
+
+
+What is MongoDb?
+
+Sql vs NoSql
